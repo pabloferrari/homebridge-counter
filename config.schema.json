@@ -1,0 +1,51 @@
+{
+    "pluginAlias": "IndexCounter",
+    "pluginType": "accessory",
+    "singular": false,
+    "schema": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "title": "Name",
+                "type": "string",
+                "required": true
+            },
+            "max": {
+                "title": "Maximum Index",
+                "type": "number",
+                "default": 5,
+                "description": "The maximum index to allow"
+            },
+            "randomizeAfterDelay": {
+                "title": "Randomize After Delay?",
+                "type": "boolean",
+                "default": false,
+                "description": "If set, the counter will pick a new random number after the specified delay (takes precedence over Reset After Delay)."
+            },
+            "resetAfterDelay": {
+                "title": "Reset After Delay?",
+                "type": "boolean",
+                "default": false,
+                "description": "If set, the counter will be reset to 0 after the specified delay (Randomize After Delay must be false)."
+            },
+            "delay": {
+                "title": "Delay",
+                "type": "number",
+                "default": 300000,
+                "description": "How long after the index is changed to randomize or reset, in milliseconds."
+            },
+            "resetAtTime": {
+                "title": "Reset at Time",
+                "type": "boolean",
+                "default": false,
+                "description": "If set, the counter will be reset at the specified time (format: 'HH:mm')."
+            },
+            "time": {
+                "title": "Time (format: 'HH:mm')",
+                "type": "string",
+                "default": "00:00",
+                "description": "When the index will be reset."
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "homebridge-counter",
+  "version": "1.0.2",
+  "description": "Simple counter for Homebridge: https://github.com/nfarina/homebridge",
+  "license": "ISC",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pabloferrari/homebridge-counter.git"
+  },
+  "bugs": {
+    "url": "http://github.com/pabloferrari/homebridge-counter/issues"
+  },
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
+  },
+  "dependencies": {
+    "node-persist": "^2.1.0"
+  }
+}

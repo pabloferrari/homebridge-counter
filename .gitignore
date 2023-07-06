@@ -1,0 +1,4 @@
+node_modules
+persist
+.DS_Store
+package-lock.json
